@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+span {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  max-width: 970px;
+  padding: 0 20px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  font-size: 36px;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+}
+
+.description {
+  width: 45%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 27px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 970px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 5vw;
+}
+
+li {
+  position: relative;
+}
+
+li:nth-child(3n + 2) {
+  margin-top: 80px;
+}
+
+.image {
+  padding: 0 26px 15px 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(90deg) translateX(100%);
+  transform-origin: 100% 0;
+  font-size: 12px;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  max-width: 970px;
+  padding: 0 20px;
+  margin: 100px auto 40px;
+  color: #a9a9a9;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 765px) {
+  header {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .description {
+    width: auto;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  li:nth-child(3n + 2) {
+    margin-top: 0;
+  }
+
+  li:nth-child(2n + 2) {
+    margin-top: 60px;
+  }
+
+  .image {
+    padding-right: 15px;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 10px;
+  }
+}
